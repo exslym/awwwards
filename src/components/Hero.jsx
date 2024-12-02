@@ -65,11 +65,13 @@ const Hero = () => {
 	// clip-path video-frame on scroll:
 	useGSAP(() => {
 		gsap.set('#video-frame', {
-			clipPath: 'polygon(14% 0%, 72% 0, 88% 90%, 0 85%)',
-			borderRadius: '0% 0% 40% 25%',
+			clipPath:
+				'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)',
+			borderRadius: '0% 0% 0% 0%',
 		});
 		gsap.from('#video-frame', {
-			clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+			clipPath:
+				'polygon(20% 0%, 0% 0%, 0% 55%, 0% 100%, 20% 100%, 50% 100%, 80% 100%, 100% 100%, 100% 53%, 100% 0%, 80% 0%, 49% 0%)',
 			borderRadius: '0% 0% 0% 0%',
 			ease: 'power1.inOut',
 			scrollTrigger: {
@@ -84,7 +86,7 @@ const Hero = () => {
 	const getVideoSource = index => `videos/hero-${index}.mp4`;
 
 	return (
-		<div className='relative h-dvh w-screen overflow-x-hidden'>
+		<div className='relative h-dvh w-screen overflow-x-hidden' id='home'>
 			{isLoading && (
 				<div className='flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50'>
 					<div className='three-body'>
