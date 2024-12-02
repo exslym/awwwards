@@ -28,7 +28,7 @@ const About = () => {
 	return (
 		<div id='about' className='min-h-screen w-screen'>
 			<div className='relative mb-8 mt-36 flex flex-col items-center gap-5'>
-				<p className='font-general text-[20px] uppercase md:text-4xl'>Welcome to Zentry</p>
+				<p className='font-general text-[20px] uppercase md:text-3xl'>Welcome to Zentry</p>
 
 				<AnimatedTitle
 					title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
