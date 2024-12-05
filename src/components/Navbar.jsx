@@ -72,7 +72,7 @@ const Navbar = () => {
 					{/* Logo and Product button */}
 					<div className='flex items-center gap-7'>
 						<a href='#home'>
-							<img src='/img/exs-logo.png' alt='logo' className='w-10' />
+							<img src='img/exs-logo.png' alt='logo' className='w-10' />
 						</a>
 
 						<Button
@@ -97,7 +97,7 @@ const Navbar = () => {
 							onClick={toggleAudioIndicator}
 							className='ml-10 mr-5 flex items-center space-x-0.5'
 						>
-							<audio ref={audioElementRef} className='hidden' src='/audio/loop.mp3' loop />
+							<audio ref={audioElementRef} className='hidden' src='audio/loop.mp3' loop />
 							{[1, 2, 3, 4].map(bar => (
 								<div
 									key={bar}
